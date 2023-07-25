@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230725 20:40:05.399" rpa="false" schemaversion="4">
+<suite id="s1" name="Panelscouts Robotframework" source="C:\Users\Joanna Szymczyk-Raj\Documents\GitHub\panelscouts_robotframework">
+<suite id="s1-s1" name="Test Lack Of Login Or Password Rf" source="C:\Users\Joanna Szymczyk-Raj\Documents\GitHub\panelscouts_robotframework\test_lack_of_login_or_password_rf.robot">
+<test id="s1-s1-t1" name="Lack of login or password" line="13">
+<kw name="Open login page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230725 20:40:05.760" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
+<msg timestamp="20230725 20:40:05.777" level="INFO">Executing: C:\Users\Joanna Szymczyk-Raj\Documents\GitHub\panelscouts_robotframework\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230725 20:40:05.760" endtime="20230725 20:40:10.380"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Scouts panel - sign in</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230725 20:40:10.393" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
+<status status="PASS" starttime="20230725 20:40:10.380" endtime="20230725 20:40:10.393"/>
+</kw>
+<status status="PASS" starttime="20230725 20:40:05.759" endtime="20230725 20:40:10.393"/>
+</kw>
+<kw name="Click in the submit button">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[@class='MuiButton-label']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230725 20:40:10.397" level="INFO">Clicking element 'xpath=//span[@class='MuiButton-label']'.</msg>
+<status status="PASS" starttime="20230725 20:40:10.396" endtime="20230725 20:40:10.521"/>
+</kw>
+<status status="PASS" starttime="20230725 20:40:10.395" endtime="20230725 20:40:10.521"/>
+</kw>
+<kw name="Assert lack of login or password">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MESSAGE PLEASE PROVIDE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230725 20:40:10.526" endtime="20230725 20:40:10.821"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Scouts panel - sign in</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230725 20:40:10.835" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
+<status status="PASS" starttime="20230725 20:40:10.822" endtime="20230725 20:40:10.836"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>alert.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230725 20:40:11.072" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230725 20:40:10.836" endtime="20230725 20:40:11.072"/>
+</kw>
+<status status="PASS" starttime="20230725 20:40:10.526" endtime="20230725 20:40:11.072"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230725 20:40:11.073" endtime="20230725 20:40:13.888"/>
+</kw>
+<status status="PASS" starttime="20230725 20:40:05.758" endtime="20230725 20:40:13.889"/>
+</test>
+<doc>Suite description #automated tests for scout website</doc>
+<status status="PASS" starttime="20230725 20:40:05.436" endtime="20230725 20:40:13.895"/>
+</suite>
+<status status="PASS" starttime="20230725 20:40:05.404" endtime="20230725 20:40:13.904"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Panelscouts Robotframework">Panelscouts Robotframework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Lack Of Login Or Password Rf">Panelscouts Robotframework.Test Lack Of Login Or Password Rf</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
