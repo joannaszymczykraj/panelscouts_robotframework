@@ -4,7 +4,7 @@ Library  SeleniumLibrary
 Documentation    Suite description #automated tests for scout website
 
 *** Variables ***
-${LOGIN URL}      https://scouts-test.futbolkolektyw.pl/en
+${LOGIN URL}      https://dareit.futbolkolektyw.pl/en
 ${BROWSER}        Chrome
 ${SIGNINBUTTON}     xpath=//span[@class='MuiButton-label']
 ${MESSAGE PLEASE PROVIDE}       xpath=//span[text()='Please provide your username or your e-mail.']

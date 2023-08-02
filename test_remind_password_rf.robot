@@ -4,10 +4,10 @@ Library  SeleniumLibrary
 Documentation    Suite description #automated tests for scout website
 
 *** Variables ***
-${LOGIN URL}        https://scouts-test.futbolkolektyw.pl/en
+${LOGIN URL}        https://dareit.futbolkolektyw.pl/en
 ${BROWSER}          Chrome
 ${REMIND PASSWORD BUTTON}       xpath=//a[text()='Remind password']
-${REMIND URL}       https://scouts-test.futbolkolektyw.pl/en/remind
+${REMIND URL}       https://dareit.futbolkolektyw.pl/en/remind
 ${REMIND LOGO}      xpath=//h5[contains(text(),'Remind password')]
 ${REMIND EMAIL INPUT}       xpath=//input[@name='email']
 ${SEND BUTTON}          xpath=//button[@type='submit']

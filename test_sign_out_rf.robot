@@ -5,15 +5,15 @@ Documentation    Suite description #automated tests for scout website
 
 
 *** Variables ***
-${LOGIN URL}      https://scouts-test.futbolkolektyw.pl/en
+${LOGIN URL}      https://dareit.futbolkolektyw.pl/en
 ${BROWSER}        Chrome
 ${EMAILINPUT}       xpath=//*[@id='login']
 ${PASSWORDINPUT}        xpath=//input[@id='password']
 ${SIGNINBUTTON}     xpath=//span[@class='MuiButton-label']
 ${PAGELOGO}     xpath=//div[@title='Logo Scouts Panel']
 ${SIGNOUTBUTTON}        xpath=//span[text()='Sign out']
-${DASHBOARDURL}     https://scouts-test.futbolkolektyw.pl/en
-${SIGN OUT URL}     https://scouts-test.futbolkolektyw.pl/en/login
+${DASHBOARDURL}     https://dareit.futbolkolektyw.pl/en
+${SIGN OUT URL}     https://dareit.futbolkolektyw.pl/en/login
 
 *** Test Cases ***
 Sign out the system
