@@ -19,4 +19,5 @@ __________________________________________________________
 I confirm the above.
 Me and the robot framework liked each other.
 <p></p> 
-<b>The task of transforming my existing tests into a robot framework - was pure pleasure.</b> :gift_heart:
+<b>The task of transforming my existing tests into a robot framework - was pure pleasure.</b> :gift_heart: <p></p> 
+<p></p> I hope I did the job well. :tada:
